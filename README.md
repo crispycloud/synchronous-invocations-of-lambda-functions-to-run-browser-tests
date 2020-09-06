@@ -1,14 +1,9 @@
-# Welcome to your CDK TypeScript project!
+# Synchronous Invocations of Lambda functions to run tests
 
-This is a blank project for TypeScript development with CDK.
+## Background
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+In large-scale testing, it could take several hours to run the whole test suites, especially in the case of limited IT resources. One possible solution to this to synchronously invocate multiple serverless lambda functions to run all the tests at once
 
-## Useful commands
+## Architecture Diagram
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+![Architecture Diagram](/docs/images/architecture.png)
