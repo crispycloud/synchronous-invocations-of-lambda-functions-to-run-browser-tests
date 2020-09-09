@@ -5,23 +5,32 @@
     "synchronous-lambda-invocations-to-run-browser-tests": "bin/synchronous-lambda-invocations-to-run-browser-tests.js"
   },
   "scripts": {
+    "deploy": "tsc && cdk deploy",
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "mocha",
     "cdk": "cdk"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.62.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "aws-cdk": "1.62.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "1.62.0",
     "ts-node": "^8.1.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.62.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.62.0",
+    "@aws-cdk/aws-s3": "^1.62.0",
+    "@aws-cdk/aws-s3-deployment": "^1.62.0",
     "@aws-cdk/core": "1.62.0",
-    "source-map-support": "^0.5.16"
+    "aws-sdk": "^2.747.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "source-map-support": "^0.5.16",
+    "zombie": "^6.1.4"
   }
 }
