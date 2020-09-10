@@ -4,6 +4,7 @@
 node_modules
 testBuild
 .vscode
+log
 # CDK asset staging directory
 .cdk.staging
 cdk.out
