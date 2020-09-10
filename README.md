@@ -5,7 +5,7 @@ This project is inspired by [Wix testing architecture](https://www.youtube.com/w
 ## Prerequisite knowledge
 - AWS S3
 - AWS Lambda
-- Browser Test: ZombieJS
+- ZombieJS
 - Mocha
 - AWS CDK
 - AWS SDK
@@ -73,7 +73,7 @@ Despite the fact that tests we made for this example is really simplistic, our t
 
 ## How to replicate this
 
-1.Clone this repository
+1. Clone this repository
 2. `npm install`
 3. Install [CDK](https://docs.aws.amazon.com/cdk/latest/guide/cli.html)
 4. Set up your [AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
